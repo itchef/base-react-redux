@@ -1,0 +1,42 @@
+{
+  "name": "base-react-redux",
+  "version": "1.0.0",
+  "description": "Basic setup for an react redux application",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itchef/base-react-redux.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "React-Redux"
+  ],
+  "author": "Kaustav Chakraborty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itchef/base-react-redux/issues"
+  },
+  "homepage": "https://github.com/itchef/base-react-redux#readme",
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.5",
+    "html-loader": "0.5.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.3.1",
+    "html-webpack-plugin": "3.2.0",
+    "prop-types": "15.7.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "7.0.0-beta.3"
+  }
+}
