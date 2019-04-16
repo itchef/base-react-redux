@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
-   template: "./app/src/index.html",
+   template: "./src/index.html",
    filename: "./index.html"
 });
 
@@ -15,7 +15,7 @@ const cssPlugin = new MiniCssExtractPlugin({
 const config = (devMode) => ({
     entry: [
         "babel-polyfill",
-        "./app/src/index.js"
+        "./src/index.js"
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -43,7 +43,7 @@ const config = (devMode) => ({
             }
         ]
     },
-    plugins: [htmlPlugin]
+    plugins: [htmlPlugin, cssPlugin]
 });
 
 module.exports = (env, argv) => {

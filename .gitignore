@@ -4,5 +4,6 @@ package-lock.json
 yarn.lock
 npm-debug.log
 dist
+coverage
 
 .DS_Store
