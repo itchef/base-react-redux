@@ -1,6 +1,6 @@
-import { combineReducers } from "redux/index";
-import baseReducer from "./base.reducer";
+import { combineReducers } from 'redux';
+import baseReducer from './base.reducer';
 
 export default combineReducers({
-    base: baseReducer
+  base: baseReducer,
 });

@@ -1,18 +1,21 @@
-import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-import "./index.scss";
+import './index.scss';
 
 export default class BaseComponent extends PureComponent {
-    render() {
-        const { count, onClick } = this.props;
-        return (
-            <div className="base__wrapper">
-                <button onClick={() => onClick(count)}>Click Me</button><br/>
-                Base Component created. Count: {count}
-            </div>
-        );
-    }
+  render() {
+    const { count, onClick } = this.props;
+    return (
+      <div className="base__wrapper">
+        <button type="button" onClick={() => onClick(count)}>Click Me</button>
+        <br />
+                Base Component created. Count:
+        {' '}
+        {count}
+      </div>
+    );
+  }
 }
 
 BaseComponent.propTypes = {

@@ -1,9 +1,9 @@
-import { createStore } from "redux/index";
+import { createStore } from 'redux';
 
-import rootReducers from "../reducers";
+import rootReducers from '../reducers';
 
 export const store = createStore(
-    rootReducers
+  rootReducers,
 );
 
-export const rootElement = document.getElementById("app");
+export const rootElement = document.getElementById('app');
